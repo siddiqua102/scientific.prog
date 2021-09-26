@@ -4,7 +4,7 @@ identifier,hospital_id,None,integer,Unique identifier associated with a hospital
 identifier,patient_id,None,integer,Unique identifier associated with a patient,None
 demographic,hospital_death,None,binary,Whether the patient died during this hospitalization,0
 demographic,age,Years,numeric,The age of the patient on unit admission,None
-demographic,bmi,kilograms/metres^2,string,The body mass index of the person on unit admission,21.5
+demographic,bmi,kilograms/metres^2,numeric,The body mass index of the person on unit admission,21.5
 demographic,elective_surgery,None,binary,Whether the patient was admitted to the hospital for an elective surgical operation,0
 demographic,ethnicity,None,string,The common national or cultural tradition which the person belongs to,Caucasian
 demographic,gender,None,string,The genotypical sex of the patient,F
@@ -19,8 +19,8 @@ demographic,pre_icu_los_days,Days,numeric,The length of stay of the patient betw
 demographic,readmission_status,None,binary,Whether the current unit stay is the second (or greater) stay at an ICU within the same hospitalization,0
 demographic,weight,kilograms,numeric,The weight (body mass) of the person on unit admission,80
 APACHE covariate,albumin_apache,g/L,numeric,The albumin concentration measured during the first 24 hours which results in the highest APACHE III score,30
-APACHE covariate,apache_2_diagnosis,None,string,The APACHE II diagnosis for the ICU admission,308
-APACHE covariate,apache_3j_diagnosis,None,string,The APACHE III-J sub-diagnosis code which best describes the reason for the ICU admission,1405
+APACHE covariate,apache_2_diagnosis,None,numeric,The APACHE II diagnosis for the ICU admission,308
+APACHE covariate,apache_3j_diagnosis,None,numeric,The APACHE III-J sub-diagnosis code which best describes the reason for the ICU admission,1405
 APACHE covariate,apache_post_operative,None,binary,"The APACHE operative status; 1 for post-operative, 0 for non-operative",1
 APACHE covariate,arf_apache,None,binary,"Whether the patient had acute renal failure during the first 24 hours of their unit stay, defined as a 24 hour urine output <410ml, creatinine >=133 micromol/L and no chronic dialysis",0
 APACHE covariate,bilirubin_apache,micromol/L,numeric,The bilirubin concentration measured during the first 24 hours which results in the highest APACHE III score,20
